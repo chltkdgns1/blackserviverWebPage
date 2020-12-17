@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://bser.fun/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>블랙 서바이벌: 영원회귀 공략 - BSER.FUN</title><link rel="icon" type="image/png" href="https://bser.fun/images/logo/favicon.png"><meta name="title" content="블랙 서바이벌: 영원회귀 공략 - BSER.FUN" data-rh="true"><meta name="description" content="블랙서바이벌 전적검색, 영원회귀 전적검색, 블랙서바이벌 공략, 블랙서바이벌 빌드순위, 영원회귀 공략, 영원회귀 빌드순위, 영원회귀 캐릭터 상세 정보, 영원회귀 캐릭터 목록, 영원회귀 티어 순위, 영원회귀 챔프 순위" data-rh="true"><meta name="keywords" content="블랙서바이벌 전적검색, 영원회귀 전적검색, 영원회귀, 블랙서바이벌, 쌍검 재키, 쇼이치, 공략, 빌드순위, 아이템, 캐릭터, 캐릭터 목록, 목록, 루트, 검색, 조합, 방법, 티어, 스킬설명, 상세정보, 스증, 치명타, 아야, 피오라, 시셀라, 리다이린, 재키" data-rh="true"><meta property="og:type" content="website"><meta property="og:site_name" content="블랙 서바이벌: 영원회귀 공략"><meta property="og:url" content="https://bser.fun"><meta property="og:title" content="블랙 서바이벌: 영원회귀 공략 - BSER.FUN"><meta property="og:description" content="블랙서바이벌 전적검색, 영원회귀 전적검색, 블랙서바이벌 공략, 블랙서바이벌 빌드순위, 영원회귀 공략, 영원회귀 빌드순위, 영원회귀 캐릭터 상세 정보, 영원회귀 캐릭터 목록, 영원회귀 티어 순위, 영원회귀 챔프 순위"><meta property="og:image" content="https://bser.fun/images/logo/linkThumbnail.jpg"><meta property="og:image:type" content="image/jpg"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name="naver-site-verification" content="8d4723b123edc5c727d4cd8dfc5c928197c7b765"><script src="./main_picture2_files/osd.js.다운로드"></script><script src="./main_picture2_files/f.txt"></script><script type="text/javascript" async="" src="./main_picture2_files/analytics.js.다운로드"></script><script src="./main_picture2_files/f(1).txt" id="google_shimpl"></script><script async="" src="./main_picture2_files/taevents-c.js.다운로드"></script><script data-ad-client="ca-pub-3482921779677146" async="" src="./main_picture2_files/f(2).txt" data-checked-head="true"></script><script async="" src="./main_picture2_files/js"></script><script>window.gaCode = 'UA-182646487-1'
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-182646487-1');
+
+    (function(f,a,c,d,g,b,h,e){if(f.taq){return}b=f.taq=function(){b.queue.push(arguments)};b.queue=[];if(/bot|googlebot|crawler|spider|robot|crawling/i.test(c.userAgent)){return}h=a.createElement(d);h.async=true;h.src=g;e=a.getElementsByTagName(d)[0];e.parentNode.insertBefore(h,e)})(window,document,navigator,"script","//static.tacdn.com/js3/taevents-c.js");
+    taq('track', 'PAGEVIEW')</script><meta http-equiv="origin-trial" content="A1H+PzQW00tt6dlReHFzfO4EtBaEtEImIF9ZNiF54JpDi1bO6/7PK96Q0qxy017wgzSy9ByDKoju2mo57DH+MwoAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MTAzOTg0NTIsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><link rel="preload" href="./main_picture2_files/f(3).txt" as="script"><script type="text/javascript" src="./main_picture2_files/f(3).txt"></script><link rel="preload" href="./main_picture2_files/f(4).txt" as="script"><script type="text/javascript" src="./main_picture2_files/f(4).txt"></script><style data-styled="active" data-styled-version="5.1.1"></style><script charset="utf-8" src="./main_picture2_files/0.d143900307bc85027602.js.다운로드"></script><script charset="utf-8" src="./main_picture2_files/1.368a13a4f195c52349a7.js.다운로드"></script><script charset="utf-8" src="./main_picture2_files/7.6b1a60d2aded17dbbeb3.js.다운로드"></script><style type="text/css">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style><script charset="utf-8" src="./main_picture2_files/2.3100856f523853535743.js.다운로드"></script><script charset="utf-8" src="./main_picture2_files/8.0b663a6f349fccf3eb31.js.다운로드"></script><script charset="utf-8" src="./main_picture2_files/10.c0d4df3ff159b185501c.js.다운로드"></script></head><body><div id="app"><header class="HeaderSection-rEORg kGxHIB"><nav class="MenuSection-fsSaTk fSGjTw"><ul class="Menu-pzWUm iaYtrA"><li class="MenuItem-duVRWb fyJjCF"><div class="HomeBox-diAzoM eQyUmB"></div></li><li class="MenuItem-duVRWb HFDQO">랭킹</li><li class="MenuItem-duVRWb HFDQO">빌드 순위</li></ul></nav><section class="MainCommentSection-jGMJeL gDCpYI"><div class="Comment-kdqtlB dZwqrl"><mark class="Title-jUctkF bjnYKD">BSER.FUN</mark><span class="Description-TNmiY kwlAGP">절망의 끝까지 도달한 폰에게 모든 영광을.</span><span class="Description-TNmiY kwlAGP">루미아 섬 최고가 되기 위한 공략을 확인해보세요.</span><div class="UserSearchBar-ioBxRo cPkXMF"><input placeholder="전적 검색" class="UserSearchArea-gKjMFW jJSOIs" value=""><button class="UserSearchButton-fbEAVX dgqERt">GO</button></div></div></section></header><section class="Content-kdwfAL fjqRDE CharacterSection-eVWkEV dGhNxO"><div class="Header-hwLOgt gcDzgW"><h4 class="Title-kkfSpO kJcRkk">캐릭터 목록</h4></div><section class="CharacterSection-ckQYC dDcgod"><div class="CharacterCard-dAFomj eaBhan"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">재키</mark></div></div><div class="CharacterCard-dAFomj dqGlUG"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">아야</mark></div></div><div class="CharacterCard-dAFomj jJZAJh"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">피오라</mark></div></div><div class="CharacterCard-dAFomj hVbwue"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">매그너스</mark></div></div><div class="CharacterCard-dAFomj bijByo"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">자히르</mark></div></div><div class="CharacterCard-dAFomj gTgGum"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">나딘</mark></div></div><div class="CharacterCard-dAFomj gTJMLf"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">현우</mark></div></div><div class="CharacterCard-dAFomj ibURkk"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">아이솔</mark></div></div><div class="CharacterCard-dAFomj iozEhB"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">리다이린</mark></div></div><div class="CharacterCard-dAFomj grqfLi"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">유키</mark></div></div><div class="CharacterCard-dAFomj bKVQhW"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">하트</mark></div></div><div class="CharacterCard-dAFomj irmAij"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">혜진</mark></div></div><div class="CharacterCard-dAFomj gGDPtk"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">쇼우</mark></div></div><div class="CharacterCard-dAFomj boyZi"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">시셀라</mark></div></div><div class="CharacterCard-dAFomj NEWrZ"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">키아라</mark></div></div><div class="CharacterCard-dAFomj dujEeu"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">아드리아나</mark></div></div><div class="CharacterCard-dAFomj dHshGA"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">쇼이치</mark></div></div><div class="CharacterCard-dAFomj egfias"><div class="HoverEvent-fgzUMg bMMMLc"><mark class="Name-qdoFh ktutJp">실비아</mark></div></div></section></section><footer class="FooterSection-rIMxm fVOmrc"><div class="Donation-hEMZUe kTjiLw"><button class="Button-jyKNMA GZkwS"><div data-for="custom-class" data-tip="&lt;div style=&quot;background: none; text-align: left; width: 180px; white-space: pre-line; padding: 10px 0; line-height: 18px;&quot;&gt;&lt;div style=&quot;margin-bottom: 4px; background: none;&quot;&gt;&lt;span style=&quot;background: none; font-size: 18px; font-weight: bold;&quot;&gt;윌슨&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background: none; font-size: 12px;&quot;&gt;도와주세요...!&lt;/span&gt;&lt;/div&gt;" data-html="true" class="Img-fzpqUF hbRvyv" currentitem="false"></div><div class="__react_component_tooltip t3745adc4-068d-4ce3-ac4e-628fbde01985 place-left type-dark" id="custom-class" data-id="tooltip" style="left: 725px; top: 439px;"><div style="background: none; text-align: left; width: 180px; white-space: pre-line; padding: 10px 0; line-height: 18px;"><div style="margin-bottom: 4px; background: none;"><span style="background: none; font-size: 18px; font-weight: bold;">윌슨</span></div><span style="background: none; font-size: 12px;">도와주세요...!</span></div>
+<style>
+  	.t3745adc4-068d-4ce3-ac4e-628fbde01985 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t3745adc4-068d-4ce3-ac4e-628fbde01985.place-top {
+        margin-top: -10px;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-bottom {
+        margin-top: 10px;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-left {
+        margin-left: -10px;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-right {
+        margin-left: 10px;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t3745adc4-068d-4ce3-ac4e-628fbde01985.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></button></div><section class="CopyRight-kffXSr eWoiQe"><span class="Text-pXEYb eUXAfF">© 2020 BSER.FUN <br>BSER.FUN isn’t endorsed by Nimble Neuron and doesn’t reflect the views or opinions of Nimble Neuron or anyone officially involved in producing or managing Black Survival: Eternal Return. Black Survival: Eternal Return and Nimble Neuron are trademarks or registered trademarks of Nimble Neuron, Inc. Black Survival: Eternal Return © Nimble Neuron, Inc. <br><br>Contact <br>email: zgh9807@gmail.com</span></section></footer></div><script type="text/javascript" src="./main_picture2_files/app.bundle.js.다운로드"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./main_picture2_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!0" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_6974904628166" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./main_picture2_files/saved_resource.html"></iframe></body><iframe id="google_esf" name="google_esf" src="./main_picture2_files/zrt_lookup.html" data-ad-client="ca-pub-3482921779677146" style="display: none;"></iframe></html>
