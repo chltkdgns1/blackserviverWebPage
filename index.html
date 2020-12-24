@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/main_home.css">
+   <script type="text/javascript" src="js/head.js"></script>
+   <title> Signal.GG </title>
+   </script>
+</head>
+
+<body class = "body_second" style="margin : 0;">
+   <div>
+      <div style="height : 55px; margin: 0;">
+         <div style="height: 55px; background-color: #222222; position: relative; width: 100%;">
+           
+            <div class="div_text_color" style="left : 200px; width: 100px;"
+            onclick="onClickListenner('ws')">
+               <img src ="img/char/윌슨.png" style="background-color: #222222; max-height: 55px">
+            </div>
+           
+           
+            <div class="div_text_color" style="left : 200px; width: 100px;"
+               onclick="onClickListenner('rank')">
+               <p> 랭킹 </p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 130px;">
+               <p>빌드 순위</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 150px; " onclick="onClickListenner('analysis')">
+               <p>챔피언 분석</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 100px;">
+               <p>통계</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 100px;">
+               <p>커뮤니티</p>
+            </div>
+         </div>
+
+      </div>
+
+      <div style="width: 100%; height: 1px; background-color: #222222; filter:brightness(60%)">
+      </div>
+
+      <div>
+         <div class="main_image" style="background-image : url('img/main_main.png') ;"></div>
+
+         <!-- <div style="text-align: center;">
+            <form method="get" action = "totalsearch.html" >
+               <input type="text" name = "data" id="userData" class="input_text" placeholder="소환사명, 소환사명, ..." autocomplete="off">
+               <input type='submit' id="main_home_search" class="input_click" value='GO' />
+   
+            </form>
+         </div> -->
+
+         <div style="text-align: center;">
+            <input type="text" id="userData" class="input_text" placeholder="소환사명, 소환사명, ..." autocomplete="off" 
+            onKeypress="javascript:if(event.keyCode==13){
+               onClickListenner('main_home_search');
+            }">
+
+            <input type='button' id="main_home_search" onclick="onClickListenner('main_home_search')"
+               class="input_click" value='GO' />
+         </div>
+
+         <div style="text-align: center;">
+            <img src="img/ink.png">
+         </div>
+      </div>
+
+      <div
+         style="margin:auto; position:relative; width:900px; height:100%; border-top: solid 3px lightgray; margin-top: 30px;">
+         <p style="font-size:x-small; text-align:center">© 2020 ER.GG
+            ER.GG isn’t endorsed by Nimble Neuron and doesn’t reflect the views or opinions of Nimble Neuron or anyone
+            officially involved in producing or managing Black Survival: Eternal Return. Black Survival: Eternal Return
+            and Nimble Neuron are trademarks or registered trademarks of Nimble Neuron, Inc. Black Survival: Eternal
+            Return © Nimble Neuron, Inc.</p>
+      </div>
+
+
+      <!-- <div style = "height: 50px; margin-top: 10px; padding-left: 210px; top: 450px; position: relative;">
+
+         <pre style="font-size: 11px; color: rgb(230, 223, 215);">
+            About OP.GG 로고 히스토리 개인정보처리방침 도움말 제휴 문의/피드백 채용
+            © 2012-2020 OP.GG. OP.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of
+            Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc
+         </pre>
+
+      </div> -->
+
+
+   </div>
+
+</body>
+
+</html>

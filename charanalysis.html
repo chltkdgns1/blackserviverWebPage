@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/main_home.css">
+   <script type="text/javascript" src="js/head.js"></script>
+   <title> Signal.GG </title>
+</head>
+
+<body class="body_second" style="margin : 0; background-color: #EAEAEA;">
+   <div>
+      <div style="height : 55px; margin: 0;">
+         <div style="height: 55px; background-color: #222222; float: left; position: relative; width: 100%;">
+
+            <div class="div_text_color" style="left : 200px; width: 100px;" 
+            onclick="onClickListenner('ws')">
+               <img src ="img/char/윌슨.png" style="background-color: #222222;  max-height: 55px">
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 100px;"
+               onclick="onClickListenner('rank')">
+               <p> 랭킹 </p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 130px;">
+               <p>빌드 순위</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 150px;" 
+            onclick="onClickListenner('analysis')">
+               <p>챔피언 분석</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 100px;">
+               <p>통계</p>
+            </div>
+
+            <div class="div_text_color" style="left : 200px; width: 100px;">
+               <p>커뮤니티</p>
+            </div>
+         </div>
+      </div>
+
+      <div style="width: 100%; height: 1px; background-color: #222222; filter:brightness(60%)">
+      </div>
+
+
+      <div style="text-align: center;">
+         <img src="img/adj2.png" style="width: 800px; margin-top: 30px;">
+      </div>
+
+      <div style="width: 160px;position: absolute;text-align: center;top: 40%;left: 5%;">
+         <img src="img/unknown.png" class ="c_adj_ranking_left">
+     </div>
+     
+     <div style="width: 160px;position: absolute;text-align: center;top: 40%;right: 7%;">
+         <img src="img/unknown.png" class ="c_adj_ranking_left" >
+     </div>
+  
+ 
+
+
+      <div style="width: 1100px; margin: auto; margin-top: 20px; min-height: 860px; padding: 15px; background-color: #ffffff;">
+
+         <div style="float: left; padding: 5px; border: 1px solid rgb(240, 234, 234);">
+
+            <div> <b>캐릭터 목록</b></div>
+            <div style="background-color: rgb(240, 234, 234); height: 1px ;margin-top: 8px;"></div>
+            
+            <div style="background-color: #F9F9FA; height: 800px; margin-top: 10px;">
+               <div style="height: 1px;"> </div>
+               <div style="margin : auto; margin-top: 20px; margin-left: 10px;">
+                  <div style="display: inline-block" onclick="onCharClickListenner('재키')">
+                     <img src='img/char/재키.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>재키</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('아야')">
+                     <img src='img/char/아야.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>아야</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('피오라')">
+                     <img src='img/char/피오라.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>피오라</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('매그너스')">
+                     <img src='img/char/매그너스.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>매그너스</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('자히르')">
+                     <img src='img/char/자히르.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>자히르</b></p>
+                  </div>
+               </div>
+
+               <div style="margin : auto; margin-top: 10px; margin-left: 10px;">
+
+                  <div style="display: inline-block" onclick="onCharClickListenner('나딘')">
+                     <img src='img/char/나딘.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>나딘</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('현우')">
+                     <img src='img/char/현우.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>현우</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('아이솔')">
+                     <img src='img/char/아이솔.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>아이솔</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('리다이린')">
+                     <img src='img/char/리 다이린.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>리다이린</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('유키')">
+                     <img src='img/char/유키.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>유키</b></p>
+                  </div>
+
+               </div>
+
+               <div style="margin : auto; margin-top: 10px; margin-left: 10px;">
+
+                  <div style="display: inline-block" onclick="onCharClickListenner('하트')">
+                     <img src='img/char/하트.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>하트</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('혜진')">
+                     <img src='img/char/혜진.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>혜진</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('쇼우')">
+                     <img src='img/char/쇼우.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>쇼우</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('시셀라')">
+                     <img src='img/char/시셀라.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>시셀라</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('키아라')">
+                     <img src='img/char/키아라.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>키아라</b></p>
+                  </div>
+
+               </div>
+
+               <div style="margin : auto; margin-top: 10px;margin-left: 10px;">
+
+                  <div style="display: inline-block" onclick="onCharClickListenner('아드리아난')">
+                     <img src='img/char/아드리아나.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>아드리아나</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('쇼이치')">
+                     <img src='img/char/쇼이치.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>쇼이치</b></p>
+                  </div>
+                  <div style="display: inline-block" onclick="onCharClickListenner('실비아')">
+                     <img src='img/char/실비아.png' class="char_picture" style="width: 108px; height : 150px;">
+                     <p style="margin : 0"><b>실비아</b></p>
+                  </div>
+                  <div style="display: inline-block;width: 125px; height : 150px; ">
+                  </div>
+                  <div style="display: inline-block;width: 125px; height : 150px;">
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+
+         <div style="float: left; border: 1px solid rgb(240, 234, 234); padding: 5px; background-color: #ffffff; 
+         min-height: 840px; max-height: 840px; overflow: auto;">
+                  
+            <div style="margin-top: 2px;">
+               <div style="display: inline-block; margin-left: 10px;"><b>챔피언 순위</b></div>
+               <div style="display: inline-block; margin-left: 100px; color :darkgray">티어</div>
+               <div style="display: inline-block; margin-left: 20px;color :darkgray">승률</div>
+               <div style="display: inline-block; margin-left: 20px; margin-right : 20px;color :darkgray">픽률</div>
+            </div>
+            
+            <div style="background-color: rgb(240, 234, 234); height: 1px ; margin-top: 6px;" ></div>
+            
+            <table style = "border :1; border-spacing: 20px; width: 370px; margin-top: 30px;" >
+               <thead>
+                  <th>#</th>
+                  <th>챔피언</th>
+                  <th>승률</th>
+                  <th>픽률</th>
+               </thead>
+               <!-- <tr>
+                  <td style="margin-top : 20px;font-size: 12px;">1</td>
+                  <td>재키</td>
+                  <td>80%</td>
+                  <td>50%</td>
+               </tr> -->
+
+            
+            </table>
+
+
+         </div>
+
+      </div>
+
+      <div style="text-align: center;">
+         <img src="img/ink.png">
+      </div>
+
+      <div
+         style="margin: auto; position:relative; width:900px; height:100%; border-top: solid 3px lightgray; margin-top: 15px;">
+         <p style="font-size:x-small; text-align:center">© 2020 ER.GG
+            ER.GG isn’t endorsed by Nimble Neuron and doesn’t reflect the views or opinions of Nimble Neuron or anyone
+            officially involved in producing or managing Black Survival: Eternal Return. Black Survival: Eternal Return
+            and Nimble Neuron are trademarks or registered trademarks of Nimble Neuron, Inc. Black Survival: Eternal
+            Return © Nimble Neuron, Inc.</p>
+      </div>
+   </div>
+
+</body>
+
+</html>

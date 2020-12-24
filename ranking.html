@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<?php
+    // $servername="localhost";
+    // $username="wis";
+    // $dbpasswd="gkftndlTek12!";
+    // $dbname="wis";
+
+    $servername="localhost";
+    $username="root";
+    $dbpasswd="gkftndlTek12!";
+    $dbname="blackserviver";
+
+    $conn = mysqli_connect($servername,$username,$dbpasswd,$dbname);
+
+    if($conn == false){
+        echo("
+            <script>
+                window.alert('conn faild');
+                history.go(-1);
+           </script>
+       ");
+        exit;
+    }
+
+    // 일단 맨 처음에는 solo 로 찾아온다.
+    $sql = "select * from solo ORDER BY score desc limit 100";
+    $result = mysqli_query($conn,$sql);
+
+    if($result == false){
+        echo("
+            <script>
+                window.alert('task faild');
+                history.go(-1);
+           </script>
+       ");
+        exit;
+    }
+
+    $sql = "select * from duo ORDER BY score desc limit 100";
+    $result2 = mysqli_query($conn,$sql);
+
+    $sql = "select * from sqd ORDER BY score desc limit 100";
+    $result3 = mysqli_query($conn,$sql);
+
+    $cnt = 0;
+?>
+
+<head>
+    <title>게시판 목록</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css?ver=1">
+    <link rel="stylesheet" href="css/main_home.css?ver=1">
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/head.js?ver=1"></script>
+    <script type="text/javascript" src="js/selectSDS.js?ver=1"></script>
+
+  
+</head>
+
+
+<body style="background-color: #EAEAEA; min-width : 1000px; margin: 0;" >
+        <div style="height : 55px; margin: 0;">
+            <div style="height: 55px; background-color: #222222; float: left; position: relative; width: 100%;">
+
+                <div class="div_text_color" style="left : 200px; width: 100px;"
+                onclick="onClickListenner('ws')">
+                   <img src ="img/char/윌슨.png" style="background-color: #222222;  max-height: 55px">
+                </div>
+
+                <div class="div_text_color" style="left : 200px; width: 100px;" id="rank"
+                    onclick="onClickListenner('rank')">
+                    <p> 랭킹 </p>
+                </div>
+
+                <div class="div_text_color" style="left : 200px; width: 130px;">
+                    <p>빌드 순위</p>
+                </div>
+
+                <div class="div_text_color" style="left : 200px; width: 150px; " onclick="onClickListenner('analysis')">
+                    <p>챔피언 분석</p>
+                 </div>
+
+                <div class="div_text_color" style="left : 200px; width: 100px;">
+                    <p>통계</p>
+                </div>
+
+                <div class="div_text_color" style="left : 200px; width: 100px;">
+                    <p>커뮤니티</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 100%; height: 1px; background-color: #222222; filter:brightness(60%)">
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <img src="img/adj.png">
+    </div>
+
+   
+    <div style="height: 60px; margin: auto; margin-top: 20px; width: 850px;">
+        <div style="display: inline-block; font-size: 30px; ">
+            <b>랭킹</b>
+        </div>
+        <div style="display: inline-block; margin-left: 10px; font-size: 12px;    color: rgb(170, 170, 170);">
+            2020.12.19 04:00 기준
+        </div>
+
+        <div style="float : right;">
+            <div class ="c_sds_data"style="color: #5383E8;" id = "solo" onclick="onSDSClickListenner('solo')">
+                솔로
+            </div>
+            <div style="display: inline-block; width: 1px; height: 24px; display: inline-block; 
+                margin: 0px 18px; background: #222222; vertical-align: middle;" >
+            </div>
+            <div class ="c_sds_data" style="color: rgb(170, 170, 170);" id = "duo" 
+            onclick="onSDSClickListenner('duo')">
+                듀오
+            </div>
+            <div style="display: inline-block; width: 1px; height: 24px; display: inline-block;
+                margin: 0px 18px; background: #222222; vertical-align: middle;">
+            </div>
+
+            <div class ="c_sds_data" style="color: rgb(170, 170, 170);" id = "sqds"
+            onclick="onSDSClickListenner('sqds')">
+                스쿼드
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- 1등 -->
+
+
+    <div style="width: 160px;position: absolute;text-align: center;top: 20%;left: 10%;">
+        <img src="img/unknown.png" class ="c_adj_ranking_left">
+    </div>
+    
+    <div style="width: 160px;position: absolute;text-align: center;top: 20%;right: 10%;">
+        <img src="img/unknown.png" class ="c_adj_ranking_left">
+    </div>
+ 
+
+
+    <div style = "width : 1000px; margin : auto">
+            <div class = "mode_solo" >
+                <div class = "c_div_rank">
+                    <div class = "c_div_rank_1">
+                        <div class = "c_div_rank_1_">1</div>
+                        <img src="img/challenger.png" class= "c_rank_pic">
+                        <img src="img/profileIcon3849.jpg" class="c_rank_pic_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+            
+                <!-- 23등 -->
+                <div class = "c_div_rank">
+                    <div class ="c_div_rank_2">
+                        <div
+                            class = "c_div_rank_2_">2</div>
+                        <img src="img/challenger.png" class ="c_rank_pic2">
+                        <img src="img/profileIcon3849.jpg" class = "c_rank_pic2_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                     
+                    </div>
+            
+                    <div
+                        class = "c_div_rank_22">
+                        <div class = "c_div_rank_22_">
+                            3</div>
+                        <img src="img/challenger.png" style="position: relative; top: 10px; left: -20px; z-index: 9;">
+                        <img src="img/profileIcon3849.jpg"
+                            style="position : relative; left:-134px; top: -1px;width: 97px; height: 97px;">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                        
+                    </div>
+                </div>
+            
+            
+                <!-- 456등 -->
+                <div class = "c_div_rank">
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">4</div>
+                        <img src="img/challenger.png" class="m_div_rank_33">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_34">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">5</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_40">
+                        <div class="m_div_rank_32">6</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="board_list_wrap" style="margin:10px;">
+                        <table class="board_list" style="border-collapse: collapse; border: 1px solid #CDD2D2;">
+                            <caption style="display: none;">목록</caption>
+                            <thead>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>닉네임</th>
+                                    <th>티어</th>
+                                    <th>LP</th>
+                                    <th>승률</th>
+                                </tr>
+                            </thead>
+                            <?php
+                       
+                                $cnt = 7;
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $id = $row['id'];
+                                    $score = $row['score']; 
+                      
+                                    echo " 
+                                    <tr>
+                                        <td>".$cnt++."</td>
+                                        <td>".$id."</td>
+                                        <td>챌린저</td>
+                                        <td>".$score."</td>
+                                        <td>100%</td>
+                                    </tr>";
+                         }
+                     ?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+            <div class = "mode_duo">
+                <div class = "c_div_rank">
+                    <div class = "c_div_rank_1">
+                        <div class = "c_div_rank_1_">1</div>
+                        <img src="img/challenger.png" class= "c_rank_pic">
+                        <img src="img/profileIcon3849.jpg" class="c_rank_pic_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+            
+                <!-- 23등 -->
+                <div class = "c_div_rank">
+                    <div class ="c_div_rank_2">
+                        <div
+                            class = "c_div_rank_2_">2</div>
+                        <img src="img/challenger.png" class ="c_rank_pic2">
+                        <img src="img/profileIcon3849.jpg" class = "c_rank_pic2_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                     
+                    </div>
+            
+                    <div
+                        class = "c_div_rank_22">
+                        <div class = "c_div_rank_22_">
+                            3</div>
+                        <img src="img/challenger.png" style="position: relative; top: 10px; left: -20px; z-index: 9;">
+                        <img src="img/profileIcon3849.jpg"
+                            style="position : relative; left:-134px; top: -1px;width: 97px; height: 97px;">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                        
+                    </div>
+                </div>
+            
+            
+                <!-- 456등 -->
+                <div class = "c_div_rank">
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">4</div>
+                        <img src="img/challenger.png" class="m_div_rank_33">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_34">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">5</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_40">
+                        <div class="m_div_rank_32">6</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result2);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+            
+                <div id="wrapper">
+                    <div class="board_list_wrap" style="margin:10px;">
+                        <table class="board_list" style="border-collapse: collapse; border: 1px solid #CDD2D2;">
+                            <caption style="display: none;">목록</caption>
+                            <thead>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>닉네임</th>
+                                    <th>티어</th>
+                                    <th>LP</th>
+                                    <th>승률</th>
+                                </tr>
+                            </thead>
+                            <?php
+                       
+                                $cnt = 7;
+                                while($row = mysqli_fetch_assoc($result2)){
+                                    $id = $row['id'];
+                                    $score = $row['score']; 
+                      
+                                    echo " 
+                                    <tr>
+                                        <td>".$cnt++."</td>
+                                        <td>".$id."</td>
+                                        <td>챌린저</td>
+                                        <td>".$score."</td>
+                                        <td>100%</td>
+                                    </tr>";
+                         }
+                     ?>
+                        </table>
+                    </div>
+                </div> 
+            </div>
+        
+            <div class = "mode_sqd">
+                <div class = "c_div_rank">
+                    <div class = "c_div_rank_1">
+                        <div class = "c_div_rank_1_">1</div>
+                        <img src="img/challenger.png" class= "c_rank_pic">
+                        <img src="img/profileIcon3849.jpg" class="c_rank_pic_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+            
+                <!-- 23등 -->
+                <div class = "c_div_rank">
+                    <div class ="c_div_rank_2">
+                        <div
+                            class = "c_div_rank_2_">2</div>
+                        <img src="img/challenger.png" class ="c_rank_pic2">
+                        <img src="img/profileIcon3849.jpg" class = "c_rank_pic2_1">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                     
+                    </div>
+            
+                    <div
+                        class = "c_div_rank_22">
+                        <div class = "c_div_rank_22_">
+                            3</div>
+                        <img src="img/challenger.png" style="position: relative; top: 10px; left: -20px; z-index: 9;">
+                        <img src="img/profileIcon3849.jpg"
+                            style="position : relative; left:-134px; top: -1px;width: 97px; height: 97px;">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'c_id'>".$id."</div>
+                                <div class = 'c_tear'>Eternity I</div>
+                                <div class = 'c_point'>".$score."</div>
+                            ";
+                        ?>
+                        
+                    </div>
+                </div>
+            
+            
+                <!-- 456등 -->
+                <div class = "c_div_rank">
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">4</div>
+                        <img src="img/challenger.png" class="m_div_rank_33">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_34">
+            
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_31">
+                        <div class="m_div_rank_32">5</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+            
+                    <div class="m_div_rank_40">
+                        <div class="m_div_rank_32">6</div>
+                        <img src="img/challenger.png" class="m_div_rank_38">
+                        <img src="img/profileIcon3849.jpg" class="m_div_rank_39">
+                        <?php
+                            $row = mysqli_fetch_assoc($result3);
+                            $id = $row['id'];
+                            $score = $row['score']; 
+                            echo "    
+                                <div class = 'm_div_rank_35'>".$id."</div>
+                                <div class = 'm_div_rank_36'>Eternity I</div>
+                                <div class = 'm_div_rank_37'>".$score."</div>
+                            ";
+                        ?>
+                    </div>
+                </div>
+        
+                <div id="wrapper">
+                    <div class="board_list_wrap" style="margin:10px;">
+                        <table class="board_list" style="border-collapse: collapse; border: 1px solid #CDD2D2;">
+                            <caption style="display: none;">목록</caption>
+                            <thead>
+                                <tr>
+                                    <th>순위</th>
+                                    <th>닉네임</th>
+                                    <th>티어</th>
+                                    <th>LP</th>
+                                    <th>승률</th>
+                                </tr>
+                            </thead>
+                            <?php
+                       
+                                $cnt = 7;
+                                while($row = mysqli_fetch_assoc($result3)){
+                                    $id = $row['id'];
+                                    $score = $row['score']; 
+                      
+                                    echo " 
+                                    <tr>
+                                        <td>".$cnt++."</td>
+                                        <td>".$id."</td>
+                                        <td>챌린저</td>
+                                        <td>".$score."</td>
+                                        <td>100%</td>
+                                    </tr>";
+                         }
+                     ?>
+                        </table>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+
+	
+
+</body>
+
+<script>
+    $('.mode_duo').hide();
+    $('.mode_sqd').hide();
+</script>
+
+</html>

@@ -1,0 +1,158 @@
+@media screen and (max-width : 900px){
+	.body_second{
+		width: 900px;
+		text-align: center;
+	 }
+ } 
+ @media screen and (min-width : 900px){
+	.body_second{
+	   width: 100%;
+	   text-align: center;
+    }
+}
+.j_record_sideAD{position:absolute;width:180px;height:360px;left:0;top:0;margin-left:-195px}
+.div_text_color{
+	margin: 0;
+	color: #C1CDD1;
+	position: relative; 
+	float: left;
+	height: 55px;
+ }
+.div_text_color:hover{
+	cursor:pointer;
+	margin: 0;
+	color: #5383E8;
+	position: relative; 
+	float: left;
+	height: 55px;
+ }
+ header {
+    margin:0;
+    height: 50px;
+    border-bottom: solid 4px black;
+}
+main {
+    min-height: 700px;
+}
+footer {
+    margin:0;
+    height: 120px;
+}
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+li {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    width: 60px;
+    height: 50px;
+}
+img {
+    width:100%;
+    border: 1px solid black;
+}
+body {
+    margin:0;
+    background-color: rgb(220, 220, 220);
+}
+table, tr, td {
+    border-collapse: collapse;
+}
+button {
+    cursor: pointer;
+}
+.recordBox {
+    width:458px;
+    height:100px;
+    margin:5px 0px 5px 20px;
+    border:1px solid #AAAAAA;
+    background-color: #A3CFEC;
+    color:rgb(54,54,54);
+    border-radius:10px;
+}
+.record_characterStatsBox {
+    width: 280px;
+    height: 200px;
+    background-color: #cacaca;
+    border-radius:10px;
+    padding: 5px;
+}
+.recordBox_itemBoxTable {
+    width:180px;height:80px;margin:10px;border:1px solid #101010;
+}
+.recordBox_itemBox {
+    width:20px;
+    height:12px;
+    border:1px solid #101010;
+    background-color:#4C3763;
+}
+.recordBox_resultData {
+    font-size:3mm;
+    float:left;
+    margin:20px 10px; 
+}
+.recordBox_itemBox_itemImage {
+    width:40px;height:22px;border:none;
+}
+.j_record_upperDiv_userData {
+    margin:auto; width:700px; min-height:200px;
+}
+.j_record_upperDiv_userName {
+    font-size:7mm; padding-top:50px; float:left; padding-left:40px; text-align:left;
+}
+.j_record_refreshButton {
+    position:relative; width:70px; height:30px; left:-250px; background-color:skyblue; border:0px; outline:0;
+}
+.j_record_lastUpadateTime {
+    font-size:3mm;position:relative; left: -240px; text-align:left;
+}
+.j_record_modeSelectDiv {
+    border-bottom: 1px solid rgb(170,170,170);
+}
+.j_record_modeSelectBoxDiv {
+    margin:auto; width:700px; height:40px;
+}
+.j_record_midDiv {
+    min-height:300px; padding-top:10px;overflow:auto
+}
+.j_record_midDiv_center {
+    margin:auto; width:800px; min-height:300px;position:relative
+}
+.j_record_leftCenterDiv {
+    margin-top:20px; width:300px;min-height:300px;float:left;
+}
+.j_record_characterStatsTable {
+    border:none;width:260px;
+}
+.j_record_rightCenterDiv {margin-top:20px; width:500px;min-height:300px;float:left}
+.j_fs5 {font-size: 5mm}
+.j_recordBox_KAH {font-size:3.5mm; float:left; padding:25px 10px}
+.j_recordBox_lv {font-size:3.5mm; float:left; padding:25px 20px}
+.j_record_footerDiv{margin:auto; width:800px; height:100%; border-top: solid 3px #555555}
+.j_record_footerText{padding-top:20px; font-size:small;text-align:center}
+.modeSelectBox {
+    float:left;
+    width:120px;
+    height:100%;
+    border-top: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    border-left:1px solid darkgray;
+    cursor: pointer;
+}
+.modeSelectBox:hover {
+    background-color: rgb(153, 153, 153);
+}
+.modeSelectedBox {
+    float:left;
+    width:120px;
+    height:100%;
+    border-top: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    border-left:1px solid darkgray;
+    cursor: pointer;
+    background-color: rgb(153, 153, 153);
+}

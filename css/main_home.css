@@ -1,0 +1,311 @@
+
+.c_sds_data{
+	display: inline-block;
+	font-size: 16px; 
+}
+
+
+.c_sds_data:hover{
+	cursor:pointer;
+}
+
+.c_ranking{
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+}
+
+.c_time {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 8px;
+    color: rgb(170, 170, 170);
+}
+
+
+.c_solo {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: middle;
+    color: rgb(235, 156, 48);
+    cursor: default;
+}
+
+.c_duo {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.c_squad {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.body_second{
+	min-width: 1200px;
+ }
+
+ .body_second_ranking{
+	min-width: 1200px;
+ }
+
+
+/* @media screen and (max-width : 950px){
+	.body_second{
+		width: 950px;
+	 }
+ } 
+
+ @media screen and (min-width : 950px){
+	.body_second{
+	   width: 100%;
+	}
+}  */
+
+@media screen and (max-width : 1600px){
+	 .c_adj_ranking_left{
+		width: 0px; height: 0px;
+	 }
+ } 
+
+
+
+.c_div_rank{
+	margin-top: 30px; text-align: center;
+}
+
+.c_div_rank_1{
+	display:inline-block; width : 400px ;height : 180px ;background-color: #FFFFFF; border:5px solid#EDCE7A;
+	
+}
+
+.c_div_rank_2{
+	display:inline-block; width: 300px ;height : 180px ;background-color: #FFFFFF; border:3px solid silver; margin-right: 30px;
+	
+}
+
+.c_div_rank_22{
+	display:inline-block; width : 300px ;height : 180px ;background-color: #FFFFFF; border:3px solid silver;
+}
+
+.c_div_rank_22_{
+	height: 25px; width: 25px; position: relative; left : -2px; background-color: silver; text-align: center; color: #FFFFFF;
+}
+
+.c_div_rank_2_{
+	height: 25px; width: 25px; position: relative; left : -2px; background-color: silver; text-align: center; color: #FFFFFF;
+	
+}
+
+.c_div_rank_1_{
+	height: 25px; width: 25px; position: relative; left : -2px; background-color: #EDCE7A; text-align: center; color: #FFFFFF;
+}
+
+.c_rank_pic{
+	position: relative; top: 10px; left: -70px; z-index: 9; margin: left;
+}
+
+.c_rank_pic2{
+	position: relative; top: 10px; left: -20px; z-index: 9; text-align: left;
+}
+
+.c_rank_pic2_1{
+	position : relative; left:-134px; top: -1px;width: 97px; height: 97px; text-align: left;
+}
+
+.c_rank_pic_1{
+	position : relative; left:-184px; top: -1px;width: 97px; height: 97px; margin: left;
+}
+
+.c_id{
+	position : relative; top : -110px; left : 170px;height: 10px; font-size: 15px; text-align: left;
+}
+
+.c_tear{
+	position : relative; top : -75px; left : 170px;height: 10px; font-size: 15px; text-align: left;
+}
+
+.c_point{
+	position : relative; top : -40px; left : 170px;height: 10px; font-size: 15px; text-align: left;
+}
+
+.m_div_rank_31{
+	display:inline-block; width: 270px ;height : 180px ;background-color: #FFFFFF; border:2px solid brown; margin-right: 15px;
+}
+
+.m_div_rank_32{
+	height: 25px; width: 25px; position: relative; left : -2px; background-color: brown; text-align: center; color: #FFFFFF;
+}
+
+.m_div_rank_33{
+	position: relative; top: 10px; left: -20px; z-index: 9; text-align: left;
+}
+
+.m_div_rank_34{
+	position : relative; left:-134px; top: -1px;width: 97px; height: 97px; text-align: left;
+}
+
+.m_div_rank_35{
+	position : relative; top : -110px; left : 140px;height: 10px; font-size: 15px; text-align: left;
+}
+
+.m_div_rank_36{
+	position : relative; top : -75px; left : 140px;height: 10px; font-size: 15px; text-align: left;
+}
+
+.m_div_rank_37{
+	position : relative; top : -40px; left : 140px;height: 10px; font-size: 15px; text-align: left;
+}
+
+
+.m_div_rank_38{
+	position: relative; top: 10px; left: -20px; z-index: 9;
+}
+
+.m_div_rank_39{
+	position : relative; left:-134px; top: -1px;width: 97px; height: 97px;
+}
+
+.m_div_rank_40{
+	display:inline-block; width : 270px ;height : 180px ;background-color: #FFFFFF; border:2px solid brown;
+}
+
+.char_picture{
+	display: inline-block; border:  4px solid #222222; background-color: #222222;
+	position: relative; margin-right: 10px;
+}
+.char_picture:hover{
+	filter: brightness(80%);
+	cursor:pointer;
+}
+
+.char_img{
+	width: 108px; height : 150px;
+}
+
+.main_image{ 
+	min-height : 600px; 
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	filter: brightness(30%);
+}
+
+.input_text{
+	position:relative;
+	top:-250px; 
+	left:60px; 
+	width:600px;
+	height:45px;
+	padding-left: 20px;
+	text-align:left;
+	outline:none;
+} 
+
+.input_click{
+	position:relative;
+	top:-250px; width:50px; height:35px;;
+ }
+
+ .div_menu_list{
+	color: cornsilk; position: relative; float: left;
+	height: 30px;
+ }
+ 
+ .div_text_color{
+	margin: 0;
+	color: #C1CDD1;
+	position: relative; 
+	float: left;
+	height: 55px;
+ }
+
+ .div_text_color:hover{
+	cursor:pointer;
+	margin: 0;
+	color: #5383E8;
+	position: relative; 
+	float: left;
+	height: 55px;
+ }
+ 
+ .body{
+	 background-color: #5383E8;
+	 height: max-content;
+	width: max-content;
+	margin: 0;width: 100%;
+ }
+ 
+ 
+ #sidebar {
+	float: right;
+	background-color: #85C69D;
+	width: 90px;
+	height: 214px; /* 임의 지정 */
+ }
+ 
+ #footer {
+	clear: both;
+	background-color: #3B83B1;
+	height: 40px;
+ } 
+
+  /* @media screen and (max-width : 1500px){
+	 .c_adj_ranking_left{
+		width: 0px; height: 0px;
+	 }
+
+	 .c_adj_ranking_left2{
+		width: 0px; height: 0px;
+	 }
+ } 
+
+ @media screen and (max-width : 1500px){
+
+	 .c_adj_ranking_left{
+		width: 0px; height: 0px;
+	 }
+
+	 .c_adj_ranking_left2{
+		width: 0px; height: 0px;
+	 }
+ } 
+
+ @media screen and (min-width : 1200px){
+	.body_second_ranking{
+	   width: 100%;
+	}
+}  */
+
+/* html, body, div, span, button, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+} */
+
+
+/* html, body, div, span, button, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+} */
